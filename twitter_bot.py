@@ -13,16 +13,11 @@ CONSUMER_KEY      = os.environ['C_KEY']
 CONSUMER_SECRET   = os.environ['C_SECRET']
 
 
-
 INTERVAL = 60 * 60 * 24
-d = datetime.today()
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
-
-import requests
-import json
 
 
 def getWordandMeaning():
