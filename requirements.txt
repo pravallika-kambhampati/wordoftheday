@@ -1,4 +1,3 @@
 tweepy
-time
 requests
 json
