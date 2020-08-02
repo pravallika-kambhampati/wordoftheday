@@ -13,7 +13,7 @@ CONSUMER_KEY      = os.environ['C_KEY']
 CONSUMER_SECRET   = os.environ['C_SECRET']
 
 
-INTERVAL = 60 
+INTERVAL = 60 * 60 * 24
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
