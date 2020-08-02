@@ -11,7 +11,7 @@ ACCESS_KEY = os.environ['ACCESS_KEY']
 ACCESS_SECRET  = os.environ['ACCESS_SECRET']
 CONSUMER_KEY      = os.environ['C_KEY']
 CONSUMER_SECRET   = os.environ['C_SECRET']
-
+RAPID_API_KEY = os.environ['RAPID_API_KEY']
 
 INTERVAL = 60 * 60 * 24
 
@@ -26,7 +26,7 @@ def getWordandMeaning():
 
     headers = {
        'x-rapidapi-host': "wordsapiv1.p.rapidapi.com",
-        'x-rapidapi-key': "a5a88e0350msh6b929f7ff2a0fa1p1583c7jsn84f6dbb3ca43"
+        'x-rapidapi-key': RAPID_API_KEY
        }
     
 
